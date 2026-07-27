@@ -1,4 +1,4 @@
-const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:4000/api'
+const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL ?? 'https://nutrifuel-backend.onrender.com/api'
 
 export class ApiError extends Error {
   status: number
