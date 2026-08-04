@@ -52,7 +52,7 @@ export function NutritionFinderSection() {
 
   useEffect(() => {
     apiClient
-      .get<ApiCatalogFood[]>('/foods?limit=100')
+      .get<ApiCatalogFood[]>('/foods?limit=50')
       .then((foods) => setCatalog(foods.map(mapApiFoodToFoodItem)))
       .catch(() => setCatalog([]))
   }, [])

@@ -44,7 +44,7 @@ export function RestaurantFoodsPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const loadFoods = (id: string) => {
-    apiClient.getPage<ApiFood>(`/foods?restaurantId=${id}&limit=100`).then((response) => setFoods(response.data))
+    apiClient.getPage<ApiFood>(`/foods?restaurantId=${id}&limit=50`).then((response) => setFoods(response.data))
   }
 
   useEffect(() => {
